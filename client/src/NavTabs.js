@@ -36,29 +36,18 @@ class NavTabs extends Component {
 
     const title = {
       color: 'white',
-      fontSize : '1.2em',
+      fontSize : '1.0em',
       textAlign: 'center'
     }
 
-    const styles ={
-      logoStyle : {
-      maxWidth: '42px',
-      maxHeight: '21px',
-      padding: '10px'
-    },
-    navStuff : {
-      position: 'relative',
-      width: '100vw',
-      left: '0',
-      marginBottom : '0'
+    const styles = {
+      backgroundColor: '#343a4050'
     }
-    
-  }
 
 
 return (
 
-<Navbar bg="dark" variant="dark" expand="lg">
+<Navbar bg="dark" variant="dark" expand="lg" style={styles}>
   <Navbar.Brand href="#home"><img
         alt=""
         src='/logo.png'
@@ -79,9 +68,9 @@ return (
         <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
       </NavDropdown>
     </Nav>
-    <h3 style={title}>URL would be 'https://ASOIAFcc.com/TOreport' or something
-          Where the TO would enter info
-          </h3>
+    <h3 style={title}>URL would be 'https://ASOIAFcc.com/TOreport' or something&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+          Where the TO would enter info &nbsp;&nbsp;
+          &nbsp;&nbsp;          </h3>
     <Form inline>
       <Form.Control type="text" placeholder="Search" className="mr-sm-2" />
       <Button variant="outline-success">Search</Button>

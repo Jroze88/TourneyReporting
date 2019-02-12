@@ -4,6 +4,7 @@ import axios from 'axios';
 import border from './border.jpg'
 import waxButton from './waxbutton.png'
 import TableBody from './tablebody'
+import crow from './crow.png'
 
 
 
@@ -329,6 +330,18 @@ toggleVisibility = () => {
         
       }
 
+      const crowButton = {
+        width: '100%',
+        height: '100%',
+        backgroundImage: `url(${crow})`,
+        backgroundSize: 'contain',
+        color: 'yellow',
+        backgroundColor: '#ffffff00',
+        border: 'none',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center'
+      }
+
 
         
 
@@ -341,8 +354,9 @@ toggleVisibility = () => {
       <Row>
         <br />
         <br />   
-         
-          <Col md={{ span: 8, offset: 2 }} sm={12}>
+
+          <Col md = {2}></Col>
+          <Col md={8} sm={12}>
           <Table style={table} responsive striped bordered hover variant="dark">
   <thead>
     <tr>
@@ -382,6 +396,8 @@ toggleVisibility = () => {
 
 </Table>;
 </Col>
+<Col md = {2}> <br />
+        <br /> <button style={crowButton}>Submit Results</button></Col>
 </Row>
 <Row>
      
@@ -397,7 +413,7 @@ toggleVisibility = () => {
       aria-describedby="basic-addon2"
     />
     <InputGroup.Append>
-      <Button onClick={this.toggleVisibility} style = {{visibility: this.state.toggleVis ? 'hidden' : 'visibile'}} variant="primary">Add Tournament</Button>
+      <Button onClick={this.toggleVisibility} style = {{visibility: this.state.toggleVis ? 'hidden' : 'visibile'}} style = {{fontSize : '0.7em'}} variant="primary">Add </Button>
     </InputGroup.Append>
   </InputGroup>
       <Form onSubmit={this.handleSubmit.bind(this)}>
@@ -425,7 +441,7 @@ toggleVisibility = () => {
       <Form.Control onChange= {this.handleNameChange} type="text" placeholder="Name" />
     </Form.Group>
 
-FS
+
   <Form.Group style={formstyle} controlId="formGridState">
       <Form.Label style={headerS}>  Wins</Form.Label>
       <Form.Control onChange={this.handleWinChange} as="select">
