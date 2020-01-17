@@ -44,7 +44,7 @@
     "source-map-explorer": "^1.6.0",
     "twilio": "^3.25.0",
     "twilio-video": "^2.0.0-beta4",
-    "yarn": "^1.12.3"
+    "yarn": "^1.21.1"
   },
   "repository": {
     "type": "git",
